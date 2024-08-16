@@ -35,3 +35,4 @@ https://www.toptal.com/developers/gitignore/api/pycharm+all
 
 ``` pytest tests/tests/crud/test_create_booking.py  --alluredir=allure_result -s```
 
+---------------------------------------------------------------------------------------------------------------
