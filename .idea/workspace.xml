@@ -4,31 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef93b7cb-6f63-4c8e-a4c9-757ae801494e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ef93b7cb-6f63-4c8e-a4c9-757ae801494e" name="Changes" comment="16-08-2024">
       <change afterPath="$PROJECT_DIR$/.idea/API_Automation_Framework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/constants/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/api_constants.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/helpers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/api_requests_wrapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/common_verification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/payload_manager.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resources/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/tests/crud/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/tests/crud/test_crud_better.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +63,28 @@
       <option name="presentableId" value="Default" />
       <updated>1723715319658</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added API constant file">
+      <option name="closed" value="true" />
+      <created>1723719892264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723719892264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="16-08-2024">
+      <option name="closed" value="true" />
+      <created>1723809875039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723809875039</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added API constant file" />
+    <MESSAGE value="16-08-2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="16-08-2024" />
   </component>
 </project>
