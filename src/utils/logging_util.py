@@ -20,8 +20,14 @@ def setup_logger(name='test_logger', level=logging.INFO):
     return logger
 
 
+def log_with_delimiter(logger, message):
+    delimiter = "=" * 20
+    logger.info(f"{delimiter}{message}{delimiter}")
+
+
 # Set up logger instance
 logger = setup_logger()
+
 
 def test_logger():
     logger = logging.getLogger('test_logger')
@@ -32,5 +38,5 @@ def test_logger():
     logger.addHandler(console_handler)
     logger.info("Logger is working correctly")
 
-test_logger()
 
+test_logger()

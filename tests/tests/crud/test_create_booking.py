@@ -4,7 +4,7 @@ from src.helpers.api_requests_wrapper import post_request
 from src.constants.api_constants import APIConstants
 from src.helpers.payload_manager import payload_create_booking
 from src.helpers.common_verification import verify_http_status_code, verify_json_key_for_not_null
-from src.utils.logging_util import logger  # Import the configured logger
+from src.utils.logging_util import logger, log_with_delimiter  # Import the configured logger
 from src.utils.utils import Utils
 
 
@@ -34,7 +34,7 @@ class TestCreateBooking(object):
             verify_http_status_code(response_data=response, expect_data=200)
             verify_json_key_for_not_null(response.json().get("bookingid"))
 
-            logger.info("Test completed successfully.")
+            log_with_delimiter(logger, "Test completed successfully.")
 
         except Exception as e:
             logger.error(f"Test failed: {e}")
@@ -59,7 +59,7 @@ class TestCreateBooking(object):
             logger.info(f"Response Status Code: {response.status_code}")
 
             verify_http_status_code(response_data=response, expect_data=500)
-            logger.info("Test completed successfully.")
+            log_with_delimiter(logger, "Test completed successfully.")
 
         except Exception as e:
             logger.error(f"Test failed: {e}")

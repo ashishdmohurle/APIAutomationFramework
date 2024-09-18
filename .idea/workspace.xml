@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef93b7cb-6f63-4c8e-a4c9-757ae801494e" name="Changes" comment="16-08-2024">
-      <change afterPath="$PROJECT_DIR$/src/utils/logging_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/api_requests_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/api_requests_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/common_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/common_verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/logging_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/logging_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723812856553</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="16-08-2024">
+      <option name="closed" value="true" />
+      <created>1726655449084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726655449084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
