@@ -4,40 +4,66 @@ from src.helpers.common_verification import *
 from src.helpers.payload_manager import *
 from src.utils.utils import Utils
 
-import allure
-import pytest
-import openpyxl
 import pytest
 import os
 from dotenv import load_dotenv
+from src.utils.logging_util import logger, log_with_delimiter
 
 
 @pytest.fixture(scope="session")
 def create_token():
-    response = post_request(
-        url=APIConstants().url_create_token(),
-        headers=Utils().common_headers_json(),
-        auth=None,
-        payload=payload_create_token(),
-        in_json=False
-    )
-    verify_http_status_code(response_data=response, expect_data=200)
-    verify_json_key_for_not_null_token(response.json()["token"])
+    try:
+        logger.info("Create Token")
+        response = post_request(
+            url=os.getenv('QA_BASE_URL') + APIConstants.url_create_token(),
+            headers=Utils().common_headers_json(),
+            auth=None,
+            payload=payload_create_token(),
+            in_json=False
+        )
+        logger.info(f"Request URL: {os.getenv('QA_BASE_URL') + APIConstants.url_create_token()}")
+        logger.info(f"Request Headers: {Utils().common_headers_json()}")
+        logger.info(f"Response Status Code: {response.status_code}")
+        logger.info(f"Response Data: {response.json()}")
+        log_with_delimiter(logger, "Test completed successfully.")
+
+        verify_http_status_code(response_data=response, expect_data=200)
+        verify_json_key_for_not_null_token(response.json()["token"])
+
+
+    except Exception as e:
+        logger.error(f"Test failed: {e}")
+        raise
+
     return response.json()["token"]
 
 
 @pytest.fixture(scope="session")
 def get_booking_id():
-    response = post_request(url=APIConstants().url_create_booking(),
-                            auth=None,
-                            headers=Utils().common_headers_json(),
-                            payload=payload_create_booking(),
-                            in_json=False)
+    try:
+        logger.info("Create Booking")
+        response = post_request(
+            url=os.getenv('QA_BASE_URL') + APIConstants.url_create_booking(),
+            auth=None,
+            headers=Utils().common_headers_json(),
+            payload=payload_create_booking(),
+            in_json=False
+        )
 
-    booking_id = response.json()["bookingid"]
+        booking_id = response.json()["bookingid"]
+        logger.info(f"Request URL: {os.getenv('QA_BASE_URL') + APIConstants.url_create_booking()}")
+        logger.info(f"Request Headers: {Utils().common_headers_json()}")
+        logger.info(f"Response Status Code: {response.status_code}")
+        logger.info(f"Response Data: {response.json()}")
+        log_with_delimiter(logger, "Test completed successfully.")
 
-    verify_http_status_code(response_data=response, expect_data=200)
-    verify_json_key_for_not_null(booking_id)
+        verify_http_status_code(response_data=response, expect_data=200)
+        verify_json_key_for_not_null(booking_id)
+
+    except Exception as e:
+        logger.info(f"Test Failed: {e}")
+        raise
+
     return booking_id
 
 
@@ -49,13 +75,9 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="session", autouse=True)
 def load_environment(pytestconfig):
-    # Load the .env file
     load_dotenv()
-
-    # Get the selected environment from the command line
     selected_env = pytestconfig.getoption("env").lower()
 
-    # Dynamically select the environment variables based on the selected environment
     if selected_env == "qa":
         os.environ["BASE_URL"] = os.getenv("QA_BASE_URL")
         os.environ["API_KEY"] = os.getenv("QA_API_KEY")

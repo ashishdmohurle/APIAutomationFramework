@@ -15,6 +15,7 @@ def payload_create_booking():
     return payload
 
 
+
 def payload_create_token():
     payload = {
         "username": "admin",
