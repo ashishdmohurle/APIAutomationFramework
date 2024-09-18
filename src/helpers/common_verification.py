@@ -27,3 +27,4 @@ def verify_response_key_should_not_be_none(key):
 
 def verify_response_delete(response):
     assert "Created" in response
+
