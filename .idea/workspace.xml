@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef93b7cb-6f63-4c8e-a4c9-757ae801494e" name="Changes" comment="16-08-2024">
+      <change afterPath="$PROJECT_DIR$/src/resources/create_booking_response_schema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/logging_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/logging_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/common_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/common_verification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +55,7 @@
     "Python tests.Python tests for logging_util.test_logger.executor": "Run",
     "Python tests.Python tests for test_create_booking.TestCreateBooking.executor": "Run",
     "Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_negative.executor": "Run",
+    "Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive.executor": "Run",
     "Python tests.Python tests for test_create_booking.test_logger.executor": "Run",
     "Python tests.Python tests in test_create_booking.py.executor": "Run",
     "Python.api_requests_wrapper.executor": "Run",
@@ -111,6 +115,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="API_Automation_Framework" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/tests/crud" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_create_booking.TestCreateBooking.test_create_booking_positive&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_create_booking.test_logger" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="API_Automation_Framework" />
       <option name="ENV_FILES" value="" />
@@ -129,6 +148,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking" />
+        <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive" />
         <item itemvalue="Python tests.Python tests for logging_util.test_logger" />
         <item itemvalue="Python tests.Python tests for test_create_booking.test_logger" />
         <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_negative" />
@@ -191,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726655449084</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="16-08-2024">
+      <option name="closed" value="true" />
+      <created>1726656719876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726656719876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
