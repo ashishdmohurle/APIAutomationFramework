@@ -93,3 +93,4 @@ fabric.properties
 .venv
 .venv/*
 .env
+allure-results

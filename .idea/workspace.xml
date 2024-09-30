@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef93b7cb-6f63-4c8e-a4c9-757ae801494e" name="Changes" comment="16-08-2024">
-      <change afterPath="$PROJECT_DIR$/src/resources/create_booking_response_schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/expected_response_json.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/common_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/common_verification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests/crud/test_create_booking.py" afterDir="false" />
     </list>
@@ -48,28 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Python tests.Python tests for logging_util.test_logger.executor": "Run",
-    "Python tests.Python tests for test_create_booking.TestCreateBooking.executor": "Run",
-    "Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_negative.executor": "Run",
-    "Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive.executor": "Run",
-    "Python tests.Python tests for test_create_booking.test_logger.executor": "Run",
-    "Python tests.Python tests in test_create_booking.py.executor": "Run",
-    "Python.api_requests_wrapper.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ashis/PycharmProjects/API_Automation_Framework"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for logging_util.test_logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_booking.TestCreateBooking.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_negative.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_booking.test_logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_create_booking.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_requests_wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ashis/PycharmProjects/API_Automation_Framework&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ashis\PycharmProjects\API_Automation_Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_create_booking.TestCreateBooking">
+  <component name="RunManager" selected="Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive">
     <configuration name="Python tests for logging_util.test_logger" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="API_Automation_Framework" />
       <option name="ENV_FILES" value="" />
@@ -147,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking" />
         <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_positive" />
+        <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking" />
         <item itemvalue="Python tests.Python tests for logging_util.test_logger" />
         <item itemvalue="Python tests.Python tests for test_create_booking.test_logger" />
         <item itemvalue="Python tests.Python tests for test_create_booking.TestCreateBooking.test_create_booking_negative" />
@@ -219,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726656719876</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="16-08-2024">
+      <option name="closed" value="true" />
+      <created>1726662990565</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726662990565</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
