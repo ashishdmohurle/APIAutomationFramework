@@ -26,7 +26,7 @@ class TestCRUDBooking(object):
             logger.info("Starting test: test_update_booking_id_token")
             booking_id = get_booking_id
             token = create_token
-            put_url = os.getenv('QA_BASE_URL') + APIConstants.url_patch_put_delete(booking_id=booking_id)
+            put_url = os.getenv('QA_BASE_URL') + APIConstants.PATCH_PUT_DELETE(booking_id=booking_id)
             response = put_requests(
                 url=put_url,
                 headers=Utils().common_header_put_delete_patch_cookie(token=token),
@@ -56,7 +56,7 @@ class TestCRUDBooking(object):
             logger.info("Starting test: test_delete_booking_id")
             booking_id = get_booking_id
             token = create_token
-            delete_url = os.getenv('QA_BASE_URL') + APIConstants.url_patch_put_delete(booking_id=booking_id)
+            delete_url = os.getenv('QA_BASE_URL') + APIConstants.PATCH_PUT_DELETE(booking_id=booking_id)
             response = delete_requests(
                 url=delete_url,
                 headers=Utils().common_header_put_delete_patch_cookie(token=token),
@@ -67,7 +67,6 @@ class TestCRUDBooking(object):
             logger.info(f"Request Headers: {Utils().common_headers_json()}")
             logger.info(f"Response Status Code: {response.status_code}")
             logger.info(f"Response Data: {response.text}")
-
 
             verify_response_delete(response=response.text)
             verify_http_status_code(response_data=response, expect_data=201)

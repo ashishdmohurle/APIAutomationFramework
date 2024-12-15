@@ -1,19 +1,9 @@
-# APIConstants - Class which contain all the endpoints.
-# Keep the URLs
+class APIConstants:
+    # Base URLs
+    CREATE_BOOKING = "/booking"
+    CREATE_TOKEN = "/auth"
 
-
-class APIConstants(object):
-
+    # Dynamic URL for specific booking ID
     @staticmethod
-    def url_create_booking():
-        return "/booking"
-
-    @staticmethod
-    def url_create_token():
-        return "/auth"
-
-    # Update, PUT, PATCH, DELETE - bookingId
-    @staticmethod
-    def url_patch_put_delete(booking_id):
-        return "/booking/" + str(booking_id)
-
+    def PATCH_PUT_DELETE(booking_id):
+        return f"{APIConstants.CREATE_BOOKING}/{booking_id}"

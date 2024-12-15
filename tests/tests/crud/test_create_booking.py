@@ -25,14 +25,14 @@ class TestCreateBooking(object):
             logger.info("Starting test: test_create_booking_positive")
 
             response = post_request(
-                url=os.getenv("QA_BASE_URL") + APIConstants.url_create_booking(),
+                url=os.getenv("QA_BASE_URL") + APIConstants.CREATE_BOOKING,
                 auth=None,
                 headers=Utils().common_headers_json(),
                 payload=payload_create_booking(),
                 in_json=False
             )
 
-            logger.info(f"Request URL: {os.getenv("QA_BASE_URL") + APIConstants.url_create_booking()}")
+            logger.info(f"Request URL: {os.getenv("QA_BASE_URL") + APIConstants.CREATE_BOOKING}")
             logger.info(f"Request Headers: {Utils().common_headers_json()}")
             logger.info(f"Response Status Code: {response.status_code}")
             logger.info(f"Response Data: {response.json()}")
@@ -58,13 +58,13 @@ class TestCreateBooking(object):
         try:
             logger.info("Starting test: test_create_booking_negative")
             response = post_request(
-                url=os.getenv("QA_BASE_URL") + APIConstants.url_create_booking(),
+                url=os.getenv("QA_BASE_URL") + APIConstants.CREATE_BOOKING,
                 auth=None,
                 headers=Utils().common_headers_json(),
                 payload={},
                 in_json=False
             )
-            logger.info(f"Request URL: {os.getenv("QA_BASE_URL") + APIConstants.url_create_booking()}")
+            logger.info(f"Request URL: {os.getenv("QA_BASE_URL") + APIConstants.CREATE_BOOKING}")
             logger.info(f"Request Headers: {Utils().common_headers_json()}")
             logger.info(f"Response Status Code: {response.status_code}")
 

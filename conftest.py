@@ -15,13 +15,13 @@ def create_token():
     try:
         logger.info("Create Token")
         response = post_request(
-            url=os.getenv('QA_BASE_URL') + APIConstants.url_create_token(),
+            url=os.getenv('QA_BASE_URL') + APIConstants.CREATE_TOKEN,
             headers=Utils().common_headers_json(),
             auth=None,
             payload=payload_create_token(),
             in_json=False
         )
-        logger.info(f"Request URL: {os.getenv('QA_BASE_URL') + APIConstants.url_create_token()}")
+        logger.info(f"Request URL: {os.getenv('QA_BASE_URL') + APIConstants.CREATE_TOKEN}")
         logger.info(f"Request Headers: {Utils().common_headers_json()}")
         logger.info(f"Response Status Code: {response.status_code}")
         logger.info(f"Response Data: {response.json()}")
@@ -43,7 +43,7 @@ def get_booking_id():
     try:
         logger.info("Create Booking")
         response = post_request(
-            url=os.getenv('QA_BASE_URL') + APIConstants.url_create_booking(),
+            url=os.getenv('QA_BASE_URL') + APIConstants.CREATE_BOOKING,
             auth=None,
             headers=Utils().common_headers_json(),
             payload=payload_create_booking(),
@@ -51,7 +51,7 @@ def get_booking_id():
         )
 
         booking_id = response.json()["bookingid"]
-        logger.info(f"Request URL: {os.getenv('QA_BASE_URL') + APIConstants.url_create_booking()}")
+        logger.info(f"Request URL: {os.getenv('QA_BASE_URL') + APIConstants.CREATE_BOOKING}")
         logger.info(f"Request Headers: {Utils().common_headers_json()}")
         logger.info(f"Response Status Code: {response.status_code}")
         logger.info(f"Response Data: {response.json()}")
